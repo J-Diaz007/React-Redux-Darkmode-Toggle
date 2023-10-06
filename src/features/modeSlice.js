@@ -7,7 +7,7 @@ const mode1 = {
     color3: '#4F5165',
     color4: '#547AA5',
     color5: '#50D8D7',
-    photo: 'https://www.placecage.com/200/300'
+    photo: 'https://m.media-amazon.com/images/M/MV5BYjZiMTllNzYtNGQ3Ni00ZWE3LWI1ZjAtZTM5NjFmYTY2ZDY0XkEyXkFqcGdeQXVyMzQ3Nzk5MTU@._V1_.jpg'
 }
 
 const mode2 = {
@@ -26,11 +26,11 @@ export const modeSlice = createSlice({
     name: 'mode',
     initialState,
     reducers: {
-        lighMode: () => mode2,
+        lightMode: () => mode2,
         darkMode: () => mode1
     }
 })
 
-export const { lighMode, darkMode } = modeSlice.actions
+export const { lightMode, darkMode } = modeSlice.actions
 
 export default modeSlice.reducer
